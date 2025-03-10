@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/reset.scss">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h2 class="logo">Genesis</h2>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__li"><a class="nav__link" href="#">About us</a></li>
-                <li class="nav__li"><a class="nav__link" href="#">Contact Us</a></li>
-            </ul>
-        </nav>
+
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">Genesis</a>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="#projects" class="main-nav__link">Projects</a></li>
+                    <li class="main-nav__item"><a href="#contact" class="main-nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
@@ -33,6 +36,7 @@
                 </div>
             </div>
         </section>
+    </main>
 
         <!--Grid picture section-->
         <div class="grid-container">
@@ -82,6 +86,6 @@
                 <img src="/images/img12.png" alt="Vegetables on pink background">
             </div>
         </div>
-    </main>
+
 </body>
 </html>

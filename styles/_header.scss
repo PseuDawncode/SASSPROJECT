@@ -1,0 +1,59 @@
+.header {
+    padding: $spacing-md 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: $color-black;
+    }
+    
+    .main-nav {
+      &__list {
+        display: flex;
+        gap: $spacing-md;
+      }
+      
+      &__item {
+        position: relative;
+      }
+      
+      &__link {
+        font-size: 1rem;
+        transition: color 0.3s ease;
+        
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+    
+    @media (min-width: $breakpoint-lg) {
+      padding: $spacing-lg 0;
+      
+      .logo {
+        font-size: 1.5rem;
+      }
+      
+      .main-nav {
+        &__list {
+          gap: $spacing-lg;
+        }
+        
+        &__link {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
